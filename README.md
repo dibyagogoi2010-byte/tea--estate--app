@@ -2,12 +2,12 @@
 
 This is the full Flutter project for the Tea Estate Manager app.
 
-IMPORTANT: You must run `flutter create .` in the project folder to generate platform folders (android/ios) if not present. Add your Firebase `google-services.json` into `android/app/` and configure Firebase console.
+IMPORTANT: After uploading to GitHub, run the workflow (Actions tab) to build the APK.
+Before running, you should (optionally) add your keystore secrets for a signed APK.
 
-Quick steps to build:
+Quick steps after uploading:
 1. flutter pub get
 2. flutter create .
 3. Add google-services.json to android/app/
-4. flutter build apk --release
-
-See assistant messages for detailed signing and CI instructions.
+4. (Optional) Add keystore secrets to repository (STORE_PASSWORD, KEY_PASSWORD, KEY_ALIAS, KEYSTORE_BASE64)
+5. Run Actions -> Build APK -> Run workflow
